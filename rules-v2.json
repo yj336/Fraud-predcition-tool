@@ -1,0 +1,23 @@
+[
+  {
+    "query_format": "select * from eats_emea_hypertrack_failed_orders_REALTIME where regionId in (%s) and rushAcceptedAt > %s LIMIT 1000",
+    "region_ids": "1765,618,1366,92,454,36,216,1706",
+    "port_num": "15374",
+    "time_threshold_in_day": 10,
+    "fail_rate_threshold": 0.2
+  },
+  {
+    "query_format": "select * from eats_emea_hypertrack_failed_orders_REALTIME where regionId in (%s) and rushAcceptedAt > %s LIMIT 1000",
+    "region_ids": "1763,617,13643",
+    "port_num": "15915",
+    "time_threshold_in_day": 20,
+    "fail_rate_threshold": 0.3
+  },
+  {
+    "query_format": "select * from eats_emea_hypertrack_failed_orders_REALTIME where regionId in (%s) and rushAcceptedAt > %s LIMIT 1000",
+    "region_ids": "216,1706",
+    "port_num": "15376",
+    "time_threshold_in_day": 30,
+    "fail_rate_threshold": 0.4
+  }
+]
